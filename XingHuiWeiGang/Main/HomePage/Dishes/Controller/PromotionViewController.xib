@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromotionViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yx_promotion_banner" translatesAutoresizingMaskIntoConstraints="NO" id="SAF-DP-hcc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="3nW-PE-wfU"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERC-iN-18K">
+                    <rect key="frame" x="0.0" y="155" width="158" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="单个菜品促销优惠" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rea-8M-pdt">
+                            <rect key="frame" x="8" y="71" width="96" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yx_promote_dish_icon" translatesAutoresizingMaskIntoConstraints="NO" id="att-AB-atd">
+                            <rect key="frame" x="87" y="13" width="60" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="菜品促销" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRj-Kf-sZ2">
+                            <rect key="frame" x="11" y="27" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.97254901959999995" green="0.3294117647" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0l-mk-nHe">
+                            <rect key="frame" x="0.0" y="0.0" width="158" height="100"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="dishPromotion" destination="-1" eventType="touchUpInside" id="9pu-fV-lkO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="k0l-mk-nHe" firstAttribute="leading" secondItem="ERC-iN-18K" secondAttribute="leading" id="Bbk-1v-rGK"/>
+                        <constraint firstAttribute="trailing" secondItem="k0l-mk-nHe" secondAttribute="trailing" id="G3w-v3-41P"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="KDk-8y-eNm"/>
+                        <constraint firstAttribute="bottom" secondItem="k0l-mk-nHe" secondAttribute="bottom" id="klB-9L-eyy"/>
+                        <constraint firstAttribute="height" constant="100" id="tCL-r6-dSd"/>
+                        <constraint firstItem="k0l-mk-nHe" firstAttribute="top" secondItem="ERC-iN-18K" secondAttribute="top" id="u0i-yZ-kvZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weI-Yv-MXt">
+                    <rect key="frame" x="163" y="155" width="157" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="单个商铺促销优惠" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHa-8T-sgA">
+                            <rect key="frame" x="8" y="71" width="96" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yx_promote_store_icon" translatesAutoresizingMaskIntoConstraints="NO" id="eBO-2P-ONt">
+                            <rect key="frame" x="87" y="13" width="60" height="50"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Po-AZ-G6h">
+                            <rect key="frame" x="0.0" y="0.0" width="157" height="100"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bussinessPromotion" destination="-1" eventType="touchUpInside" id="J8q-Mv-cwg"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="店铺促销" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sk6-6n-yMn">
+                            <rect key="frame" x="11" y="27" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.79607843137254897" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="0Po-AZ-G6h" firstAttribute="top" secondItem="weI-Yv-MXt" secondAttribute="top" id="FA6-fm-ofe"/>
+                        <constraint firstAttribute="trailing" secondItem="0Po-AZ-G6h" secondAttribute="trailing" id="Kwr-IR-UTT"/>
+                        <constraint firstItem="0Po-AZ-G6h" firstAttribute="leading" secondItem="weI-Yv-MXt" secondAttribute="leading" id="MIH-SY-g3m"/>
+                        <constraint firstAttribute="bottom" secondItem="0Po-AZ-G6h" secondAttribute="bottom" id="Yxa-j1-4Uw"/>
+                        <constraint firstAttribute="height" constant="100" id="hpT-j0-3Th"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fn9-sV-nkY">
+                    <rect key="frame" x="0.0" y="260" width="158" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="越秀平台促销优惠" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ij6-Hq-ZMR">
+                            <rect key="frame" x="8" y="71" width="96" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yx_promote_platform_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Uvx-4h-gJS">
+                            <rect key="frame" x="87" y="13" width="60" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="平台促销" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EP-sv-2z1">
+                            <rect key="frame" x="11" y="27" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.97254901959999995" green="0.3294117647" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jao-JT-iiZ">
+                            <rect key="frame" x="0.0" y="0.0" width="158" height="100"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="platformPromotion" destination="-1" eventType="touchUpInside" id="aJz-Gw-LdL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="weI-Yv-MXt" secondAttribute="bottom" constant="270" id="3ql-ke-ODg"/>
+                <constraint firstItem="ERC-iN-18K" firstAttribute="width" secondItem="Fn9-sV-nkY" secondAttribute="width" id="7zh-KS-31o"/>
+                <constraint firstAttribute="trailing" secondItem="weI-Yv-MXt" secondAttribute="trailing" id="DUM-42-Twd"/>
+                <constraint firstAttribute="trailing" secondItem="SAF-DP-hcc" secondAttribute="trailing" id="K0z-wA-4DD"/>
+                <constraint firstItem="ERC-iN-18K" firstAttribute="height" secondItem="Fn9-sV-nkY" secondAttribute="height" id="RCD-WZ-mka"/>
+                <constraint firstItem="Fn9-sV-nkY" firstAttribute="top" secondItem="ERC-iN-18K" secondAttribute="bottom" constant="5" id="Tg4-lW-iCK"/>
+                <constraint firstItem="SAF-DP-hcc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dW1-ZP-uQu"/>
+                <constraint firstItem="ERC-iN-18K" firstAttribute="top" secondItem="SAF-DP-hcc" secondAttribute="bottom" constant="5" id="huF-2n-g6W"/>
+                <constraint firstItem="Fn9-sV-nkY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="k0M-ag-Hqf"/>
+                <constraint firstItem="ERC-iN-18K" firstAttribute="width" secondItem="weI-Yv-MXt" secondAttribute="width" id="n64-o3-lLD"/>
+                <constraint firstItem="SAF-DP-hcc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rmU-0H-72i"/>
+                <constraint firstItem="weI-Yv-MXt" firstAttribute="leading" secondItem="ERC-iN-18K" secondAttribute="trailing" constant="5" id="wN3-R4-hEX"/>
+                <constraint firstItem="weI-Yv-MXt" firstAttribute="top" secondItem="SAF-DP-hcc" secondAttribute="bottom" constant="5" id="xw3-AK-zRr"/>
+                <constraint firstItem="ERC-iN-18K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zMf-lN-L3g"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3ql-ke-ODg"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="yx_promote_dish_icon" width="94" height="94"/>
+        <image name="yx_promote_platform_icon" width="94" height="100"/>
+        <image name="yx_promote_store_icon" width="94" height="94"/>
+        <image name="yx_promotion_banner" width="720" height="235"/>
+    </resources>
+</document>

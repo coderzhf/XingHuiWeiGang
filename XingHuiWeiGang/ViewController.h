@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    UIImageView *_tabbarView;   //tabbarView的背景
+}
+@property (nonatomic,assign) NSInteger selectedIndex;
 
 @end
 

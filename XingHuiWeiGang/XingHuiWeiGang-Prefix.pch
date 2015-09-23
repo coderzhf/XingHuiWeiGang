@@ -1,0 +1,36 @@
+//
+//  XingHuiWeiGang-Prefix.pch
+//  XingHuiWeiGang
+//
+//  Created by zx on 15/7/9.
+//  Copyright (c) 2015年 zxl－mac1. All rights reserved.
+//
+
+#ifndef XingHuiWeiGang_XingHuiWeiGang_Prefix_pch
+#define XingHuiWeiGang_XingHuiWeiGang_Prefix_pch
+
+#import "Common.h"
+#import "UIViewExt.h"
+#import "UQFactory.h"
+#import "Utils.h"
+#import "UQNotifyUtil.h"
+#import "JSONKit.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "UIView+Addition.h"
+#import "API.h"
+#import "UIView+AutoLayout.h"
+#import "MJExtension.h"
+
+
+
+
+
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

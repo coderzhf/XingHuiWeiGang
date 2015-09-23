@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DinnerCarCell" id="iN0-l3-epB" customClass="DinnerCarCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜式" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bi5-cI-tjW">
+                    <rect key="frame" x="176" y="5" width="149" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="149" id="7EW-hk-5U1"/>
+                        <constraint firstAttribute="height" constant="21" id="lJw-Zr-EfX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.97254901959999995" green="0.3294117647" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3n-Ra-PNC">
+                    <rect key="frame" x="176" y="40" width="158" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="158" id="EMi-Ag-7uy"/>
+                        <constraint firstAttribute="height" constant="21" id="mfb-Fp-JnL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yx_dinnercar_selction" translatesAutoresizingMaskIntoConstraints="NO" id="OAa-Am-KWQ">
+                    <rect key="frame" x="174" y="68" width="84" height="27"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.3294117647" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="hI9-5r-ZOv"/>
+                        <constraint firstAttribute="width" constant="84" id="wRz-sh-f4Q"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj7-vi-agF">
+                    <rect key="frame" x="206" y="74" width="24" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="sl8-22-yej"/>
+                        <constraint firstAttribute="height" constant="21" id="v1e-Bs-Zfg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVN-y9-KX0" userLabel="sub">
+                    <rect key="frame" x="174" y="73" width="24" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="6XK-bV-7He"/>
+                        <constraint firstAttribute="width" constant="24" id="wZt-lz-fNh"/>
+                    </constraints>
+                    <state key="normal" image="yx_dinnercar_sub">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="decreaseClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="7uF-P8-vax"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regist_bg" translatesAutoresizingMaskIntoConstraints="NO" id="OPA-BW-HLp">
+                    <rect key="frame" x="46" y="3" width="120" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="qRm-kZ-g0t"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4d-I5-mpd" userLabel="add">
+                    <rect key="frame" x="234" y="72" width="21" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="ciS-Hh-1uI"/>
+                        <constraint firstAttribute="height" constant="22" id="xcZ-69-idu"/>
+                    </constraints>
+                    <state key="normal" image="yx_dinnercar_add">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="increaseClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="dVL-5j-bQZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgh-sb-ixs">
+                    <rect key="frame" x="8" y="30" width="30" height="30"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" button="YES" selected="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="W7M-dJ-Le1"/>
+                        <constraint firstAttribute="width" constant="30" id="cBX-Fc-QSV"/>
+                    </constraints>
+                    <state key="normal" image="yx_dinnercar_unselectedCell">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="yx_dinnercar_selectedCell"/>
+                    <connections>
+                        <action selector="optionButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="WJt-p1-YCJ"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*仅供堂食" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOe-2r-2dp">
+                    <rect key="frame" x="250" y="20" width="62" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="VFE-OJ-gPM"/>
+                        <constraint firstAttribute="height" constant="21" id="VXi-2D-QFE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VVN-y9-KX0" firstAttribute="top" secondItem="j3n-Ra-PNC" secondAttribute="bottom" constant="6" id="10l-z6-Fzg"/>
+                <constraint firstAttribute="bottom" secondItem="X4d-I5-mpd" secondAttribute="bottom" constant="6" id="55i-He-UAl"/>
+                <constraint firstItem="Bi5-cI-tjW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="C7e-AI-wZk"/>
+                <constraint firstAttribute="bottom" secondItem="OPA-BW-HLp" secondAttribute="bottom" constant="9" id="Cbj-yl-4ZM"/>
+                <constraint firstAttribute="centerY" secondItem="Mgh-sb-ixs" secondAttribute="centerY" constant="5.5" id="GSh-5y-3Pn"/>
+                <constraint firstItem="VVN-y9-KX0" firstAttribute="leading" secondItem="OPA-BW-HLp" secondAttribute="trailing" constant="8" id="KbJ-mA-IoB"/>
+                <constraint firstItem="mj7-vi-agF" firstAttribute="leading" secondItem="VVN-y9-KX0" secondAttribute="trailing" constant="8" id="LDT-Kr-9Jz"/>
+                <constraint firstItem="aOe-2r-2dp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Lg3-tP-4Yx"/>
+                <constraint firstAttribute="bottom" secondItem="VVN-y9-KX0" secondAttribute="bottom" constant="7" id="Lnu-u7-lMo"/>
+                <constraint firstItem="X4d-I5-mpd" firstAttribute="leading" secondItem="mj7-vi-agF" secondAttribute="trailing" constant="4" id="PBV-tA-QmW"/>
+                <constraint firstAttribute="trailing" secondItem="aOe-2r-2dp" secondAttribute="trailing" constant="8" id="SE7-6V-86O"/>
+                <constraint firstItem="X4d-I5-mpd" firstAttribute="top" secondItem="j3n-Ra-PNC" secondAttribute="bottom" constant="6" id="WVp-3z-LBM"/>
+                <constraint firstItem="Bi5-cI-tjW" firstAttribute="leading" secondItem="OPA-BW-HLp" secondAttribute="trailing" constant="10" id="Wt3-SW-m4F"/>
+                <constraint firstItem="mj7-vi-agF" firstAttribute="top" secondItem="j3n-Ra-PNC" secondAttribute="bottom" constant="7" id="Xve-4y-Jg5"/>
+                <constraint firstItem="OAa-Am-KWQ" firstAttribute="top" secondItem="j3n-Ra-PNC" secondAttribute="bottom" constant="3" id="gih-k3-Nr1"/>
+                <constraint firstAttribute="bottom" secondItem="OAa-Am-KWQ" secondAttribute="bottom" constant="5" id="gkb-cU-Z13"/>
+                <constraint firstItem="OAa-Am-KWQ" firstAttribute="leading" secondItem="OPA-BW-HLp" secondAttribute="trailing" constant="8" id="hVH-kS-iL6"/>
+                <constraint firstItem="j3n-Ra-PNC" firstAttribute="top" secondItem="Bi5-cI-tjW" secondAttribute="bottom" constant="1" id="l05-wb-Qzl"/>
+                <constraint firstItem="j3n-Ra-PNC" firstAttribute="leading" secondItem="OPA-BW-HLp" secondAttribute="trailing" constant="10" id="m5l-ZU-hKR"/>
+                <constraint firstItem="OPA-BW-HLp" firstAttribute="leading" secondItem="Mgh-sb-ixs" secondAttribute="trailing" constant="8" id="qDk-Jy-kj5"/>
+                <constraint firstItem="OPA-BW-HLp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="rGq-RH-vHq"/>
+                <constraint firstAttribute="bottom" secondItem="mj7-vi-agF" secondAttribute="bottom" constant="5" id="tDC-oz-EKn"/>
+                <constraint firstItem="Mgh-sb-ixs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ye2-ZL-hOL"/>
+                <constraint firstAttribute="centerY" secondItem="j3n-Ra-PNC" secondAttribute="centerY" id="zFZ-2s-AfO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="l05-wb-Qzl"/>
+                    <exclude reference="gih-k3-Nr1"/>
+                    <exclude reference="10l-z6-Fzg"/>
+                    <exclude reference="Xve-4y-Jg5"/>
+                    <exclude reference="WVp-3z-LBM"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="count" destination="mj7-vi-agF" id="HbI-SQ-9fd"/>
+                <outlet property="dishesName" destination="Bi5-cI-tjW" id="gmt-ef-u5f"/>
+                <outlet property="isPack" destination="aOe-2r-2dp" id="G9K-ym-MEc"/>
+                <outlet property="selButton" destination="Mgh-sb-ixs" id="nqz-3g-LVt"/>
+                <outlet property="shopPrice" destination="j3n-Ra-PNC" id="Cfr-iW-fJR"/>
+                <outlet property="thumbUrl" destination="OPA-BW-HLp" id="hjN-7L-enc"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="202"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="regist_bg" width="320" height="346"/>
+        <image name="yx_dinnercar_add" width="15" height="14"/>
+        <image name="yx_dinnercar_selction" width="83" height="24"/>
+        <image name="yx_dinnercar_selectedCell" width="15" height="15"/>
+        <image name="yx_dinnercar_sub" width="15" height="3"/>
+        <image name="yx_dinnercar_unselectedCell" width="14" height="14"/>
+    </resources>
+</document>
